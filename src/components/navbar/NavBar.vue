@@ -8,7 +8,7 @@
       <li class="navbar__list__item">
         <select>
           <option>Shop</option>
-          <option>Option 2</option>
+          <option>Option</option>
           <option>Option 3</option>
         </select>
       </li>
