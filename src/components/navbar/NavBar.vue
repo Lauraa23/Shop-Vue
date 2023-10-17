@@ -15,8 +15,8 @@
       <li class="navbar__list__item">Page 3</li>
       <li class="navbar__list__item">Page 4</li>
     </ul>
+    <SearchBarVue />
   </nav>
-  <SearchBarVue />
 </template>
 <script>
 import SearchBarVue from "../searchbar/SearchBar.vue";
