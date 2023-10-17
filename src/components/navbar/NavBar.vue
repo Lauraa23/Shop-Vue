@@ -16,14 +16,16 @@
       <li class="navbar__list__item">Page 4</li>
     </ul>
     <SearchBarVue />
+    <IconsBar />
   </nav>
 </template>
 <script>
 import SearchBarVue from "../searchbar/SearchBar.vue";
+import IconsBar from "./IconsBar.vue";
 
 export default {
   name: "NavBar",
-  components: { SearchBarVue },
+  components: { SearchBarVue, IconsBar },
 };
 </script>
 
