@@ -7,7 +7,7 @@
       <li class="navbar__list__item">Home</li>
       <li class="navbar__list__item">
         <select>
-          <option>Shop</option>
+          <option>Shop-test</option>
           <option>Option</option>
           <option>Option 3</option>
         </select>
