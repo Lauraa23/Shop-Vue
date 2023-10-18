@@ -1,5 +1,18 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
+import router from "./router/index";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faMagnifyingGlass,
+  faHeart,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 
-createApp(App).use(router).mount("#app");
+library.add(faMagnifyingGlass, faHeart, faCartShopping, faPagelines);
+
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(router)
+  .mount("#app");

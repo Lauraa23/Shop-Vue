@@ -1,13 +1,15 @@
 <template>
+  <HeaderMain />
+  <home-view />
   <router-view />
-  <nav-bar />
 </template>
 <script>
-import NavBar from "./components/navbar/NavBar.vue";
+import HomeView from "./views/home/HomeView.vue";
+import HeaderMain from "./components/header/HeaderMain.vue";
 
 export default {
   name: "App",
-  components: { NavBar },
+  components: { HomeView, HeaderMain },
 };
 </script>
 <style lang="scss"></style>
