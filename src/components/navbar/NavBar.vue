@@ -1,10 +1,14 @@
 <template>
   <nav class="navbar">
     <ul class="navbar__list">
-      <li class="navbar__list__item">Home</li>
       <li class="navbar__list__item">
-        <select>
-          <option>Shop</option>
+        <router-link to="/home" style="text-decoration: none; color: inherit"
+          >Home</router-link
+        >
+      </li>
+      <li class="navbar__list__item">
+        <select class="navbar__list__item__menu">
+          <option style="font-family: inherit">Shop</option>
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
@@ -12,15 +16,11 @@
       <li class="navbar__list__item">Page 3</li>
       <li class="navbar__list__item">Page 4</li>
     </ul>
-    <standard-button buttonText="text" />
   </nav>
 </template>
 <script>
-import StandardButton from "../buttons/Standard-button.vue";
-
 export default {
   name: "NavBar",
-  components: { StandardButton },
 };
 </script>
 

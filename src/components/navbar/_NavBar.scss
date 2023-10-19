@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+  background-color: $asparagus;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: "Optima", sans-serif;
+    color: cornsilk;
+    list-style: none;
+
+    &__item {
+      font-family: "Optima", sans-serif;
+      color: cornsilk;
+      margin: 0 10px;
+
+      &__menu {
+        border: none;
+        font-family: inherit;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        color: inherit;
+      }
+    }
+  }
+}
