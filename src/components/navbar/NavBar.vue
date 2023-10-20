@@ -13,7 +13,13 @@
           <option>Option 3</option>
         </select>
       </li>
-      <li class="navbar__list__item">Page 3</li>
+      <li class="navbar__list__item">
+        <router-link
+          to="/aboutview"
+          style="text-decoration: none; color: inherit"
+          >About us</router-link
+        >
+      </li>
       <li class="navbar__list__item">Page 4</li>
     </ul>
   </nav>
