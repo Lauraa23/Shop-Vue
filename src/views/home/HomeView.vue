@@ -1,8 +1,10 @@
 <template>
   <div class="home">
-    <h2 class="Welcome!"></h2>
+    <h2 class="home__text">Welcome!</h2>
+    <div class="home__image">
+      <img src="../../plantas-suculentas-1.webp" style="width: 650px" />
+    </div>
   </div>
-  <img src="../../plantas-suculentas-1.webp" />
 </template>
 <script>
 export default {};

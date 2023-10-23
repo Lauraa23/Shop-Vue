@@ -50,17 +50,17 @@ const routes = [
   {
     path: "/productsview1",
     component: ProductsView1Vue,
-    name: "productosview1",
+    name: "productsview1",
   },
   {
     path: "/productsview2",
     component: ProductsView2Vue,
-    name: "productosview2",
+    name: "productsview2",
   },
   {
     path: "/productsview3",
     component: ProductsView3Vue,
-    name: "productosview3",
+    name: "productsview3",
   },
   {
     path: "/profileview",

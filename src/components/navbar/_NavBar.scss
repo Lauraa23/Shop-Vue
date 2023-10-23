@@ -15,6 +15,11 @@
       font-family: "Montserrat", sans-serif;
       color: cornsilk;
       margin: 0 10px;
+      transition: font-weight 0.3s;
+
+      &:hover {
+        font-weight: bold;
+      }
 
       &__menu {
         border: none;

@@ -1,0 +1,17 @@
+.home {
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__image {
+    position: relative;
+    width: 650px;
+    filter: blur(2.5px);
+  }
+}
