@@ -7,6 +7,7 @@
         class="authMain__form__input"
         id="username"
         type="text"
+        v-model="input.username"
         placeholder="Username"
       />
       <label class="authMain__form__label" for="password"></label>
@@ -14,6 +15,7 @@
         class="authMain__form__input"
         type="password"
         id="password"
+        v-model="input.password"
         placeholder="Password"
       />
       <div class="authMain__form__buttons">
@@ -23,7 +25,6 @@
         <button class="authMain__form__buttons__button" type="reset">
           Reset
         </button>
-        <button class="authMain__form__buttons__button">Sign Out</button>
       </div>
     </form>
   </div>
@@ -31,6 +32,31 @@
 <script>
 export default {
   name: "LoginForm",
+  data() {
+    return {
+      input: {
+        username: "",
+        password: "",
+      },
+    };
+  },
+  methods: {
+    login() {
+      if (
+        localStorage.getItem("username") === this.input.username &&
+        localStorage.getItem("password") === this.input.password
+      ) {
+        localStorage.setItem("active", "true");
+        console.log("Login ok");
+      } else {
+        console.log("Login ko");
+      }
+    },
+    resetForm() {
+      this.input.username = "";
+      this.input.password = "";
+    },
+  },
 };
 </script>
 <style lang="scss" scoped src="./_FormsStyle.scss"></style>

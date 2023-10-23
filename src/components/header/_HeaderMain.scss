@@ -18,6 +18,27 @@
     height: 5%;
     text-decoration: none;
     gap: 20px;
+
+    &__coins,
+    &__lang {
+      font-family: "Montserrat", sans-serif;
+      color: #666;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    &__form {
+      font-family: "Montserrat", sans-serif;
+      color: #666;
+      text-decoration: dashed;
+      margin: 0 -6px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #a19c9c;
+      }
+    }
   }
   &__main {
     display: flex;
@@ -32,15 +53,29 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      font-family: "Optima", sans-serif;
+      font-family: "Montserrat", sans-serif;
       &__text {
         color: black;
-        font-family: "Optima", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: bold;
       }
       &__logo {
         height: 30px;
         color: green;
+      }
+    }
+    &__views {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__icons {
+        font-size: 20px;
+        margin: 0 25px;
+        color: #266820;
+        transition: color 0.3s;
+        &:hover {
+          color: $asparagus;
+        }
       }
     }
   }

@@ -20,7 +20,20 @@
           >About us</router-link
         >
       </li>
-      <li class="navbar__list__item">Page 4</li>
+      <li class="navbar__list__item">
+        <router-link
+          to="/contactview"
+          style="text-decoration: none; color: inherit"
+          >Contact</router-link
+        >
+      </li>
+      <li class="navbar__list__item">
+        <router-link
+          to="/blogview"
+          style="text-decoration: none; color: inherit"
+          >Blog</router-link
+        >
+      </li>
     </ul>
   </nav>
 </template>

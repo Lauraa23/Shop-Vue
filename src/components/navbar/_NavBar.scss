@@ -1,18 +1,18 @@
 .navbar {
   width: 100%;
-  background-color: $asparagus;
+  background-color: #0e0f0e;
 
   &__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
-    font-family: "Optima", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: cornsilk;
     list-style: none;
 
     &__item {
-      font-family: "Optima", sans-serif;
+      font-family: "Montserrat", sans-serif;
       color: cornsilk;
       margin: 0 10px;
 

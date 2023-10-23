@@ -10,7 +10,7 @@
       v-model="searchQuery"
       placeholder="Search..."
     />
-    <StandardButton class="search__button" buttonText="Search" />
+    <StandardButton class="search__button" buttonText="Search" type="submit" />
   </div>
 </template>
 <script>

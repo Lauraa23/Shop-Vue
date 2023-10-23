@@ -5,12 +5,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faMagnifyingGlass,
   faHeart,
-  faCartShopping,
+  faBagShopping,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faMagnifyingGlass, faHeart, faCartShopping, faPagelines);
+library.add(faMagnifyingGlass, faHeart, faBagShopping, faPagelines, faUser);
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)

@@ -8,6 +8,9 @@ import AboutViewVue from "@/views/about/AboutView.vue";
 import ProductsView1Vue from "@/views/products/ProductsView1.vue";
 import ProductsView2Vue from "@/views/products/ProductsView2.vue";
 import ProductsView3Vue from "@/views/products/ProductsView3.vue";
+import ProfileViewVue from "@/views/profile/ProfileView.vue";
+import ContactViewVue from "@/views/contact/ContactView.vue";
+import BlogViewVue from "@/views/blog/BlogView.vue";
 
 const routes = [
   {
@@ -58,6 +61,21 @@ const routes = [
     path: "/productsview3",
     component: ProductsView3Vue,
     name: "productosview3",
+  },
+  {
+    path: "/profileview",
+    component: ProfileViewVue,
+    name: "profileview",
+  },
+  {
+    path: "/contactview",
+    component: ContactViewVue,
+    name: "contactview",
+  },
+  {
+    path: "/blogview",
+    component: BlogViewVue,
+    name: "blogview",
   },
 ];
 

@@ -1,18 +1,24 @@
 <template>
   <div class="header">
     <div class="header__options">
-      <select>
+      <select class="header__options__coins">
         <option>EUR</option>
         <option>USD</option>
       </select>
-      <select>
+      <select class="header__options__lang">
         <option>SPA</option>
         <option>ENG</option>
       </select>
-      <router-link to="/login" style="text-decoration: none"
-        >Sign in</router-link
+      <router-link
+        class="header__options__form"
+        to="/login"
+        style="text-decoration: none"
+        >Sign in /</router-link
       >
-      <router-link to="/register" style="text-decoration: none"
+      <router-link
+        class="header__options__form"
+        to="/register"
+        style="text-decoration: dashed"
         >Sign up</router-link
       >
     </div>
@@ -32,14 +38,18 @@
           <font-awesome-icon
             class="header__main__views__icons"
             icon="fa-solid fa-heart"
-            style="color: #000000"
           ></font-awesome-icon>
         </router-link>
         <router-link to="/shopcart">
           <font-awesome-icon
             class="header__main__views__icons"
-            icon="fa-solid fa-cart-shopping"
-            style="color: #000000"
+            icon="fa-solid fa-bag-shopping"
+          />
+        </router-link>
+        <router-link to="/profileview">
+          <font-awesome-icon
+            class="header__main__views__icons"
+            icon="fa-solid fa-user"
           />
         </router-link>
       </div>
