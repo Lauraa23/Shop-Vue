@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  background-color: #0e0f0e;
+  background-image: linear-gradient(to top left, #1a502c, #063816, #0000);
 
   &__list {
     display: flex;
@@ -19,15 +19,6 @@
 
       &:hover {
         font-weight: bold;
-      }
-
-      &__menu {
-        border: none;
-        font-family: inherit;
-        background: transparent;
-        padding: 0;
-        cursor: pointer;
-        color: inherit;
       }
     }
   }

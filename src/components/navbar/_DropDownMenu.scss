@@ -1,0 +1,27 @@
+.dropdown {
+  &__toggle {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: font-weight 0.3s;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &__options {
+      font-weight: normal;
+      transition: font-weight 0.3s;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}

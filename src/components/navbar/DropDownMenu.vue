@@ -1,14 +1,24 @@
 <template>
-  <div class="dropdown-menu">
-    <ul v-if="isOpen" class="dropdown-list">
-      <li>
+  <div class="dropdown">
+    <button @click="toggleMenu" class="dropdown__toggle">
+      {{ isOpen ? "Shop▲" : "Shop▼" }}
+    </button>
+    <ul v-if="isOpen" class="dropdown__list">
+      <li class="dropdown__list__options" style="list-style: none">
+        <router-link
+          to="/productsview1"
+          style="text-decoration: none; color: inherit"
+          >Plants</router-link
+        >
+      </li>
+      <li class="dropdown__list__options" style="list-style: none">
         <router-link
           to="/productsview2"
           style="text-decoration: none; color: inherit"
           >Plots</router-link
         >
       </li>
-      <li>
+      <li class="dropdown__list__options" style="list-style: none">
         <router-link
           to="/productsview3"
           style="text-decoration: none; color: inherit"
@@ -33,4 +43,4 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="scss" scoped src="./_DropDownMenu.scss"></style>
