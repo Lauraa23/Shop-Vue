@@ -1,27 +1,32 @@
 .navbar {
   width: 100%;
-  background-color: #7d9f6e;
+  background: var(--gray-scale-gray-800, #333);
   height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
 
   &__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    width: 80%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
     font-family: "Montserrat", sans-serif;
     color: cornsilk;
-    list-style: none;
 
     &__item {
-      font-family: "Montserrat", sans-serif;
+      float: left;
+      text-align: center;
+      padding: 20px 16px;
+      text-decoration: none;
       color: cornsilk;
       transition: font-weight 0.3s;
-      margin-right: 1.5%;
-
+      cursor: pointer;
       &:hover {
         font-weight: bold;
+        background-color: #111;
       }
     }
   }
