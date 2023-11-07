@@ -1,11 +1,12 @@
 <template>
   <div class="categorieCard">
-    <img :src="data.image" class="categorieCard__img" />
+    <img class="categorieCard__img" />
     <h5 class="categorieCard__name">{{ data.name }}</h5>
   </div>
 </template>
 <script>
 export default {
+  name: "Categorie-item",
   props: {
     data: {
       required: true,
@@ -13,10 +14,4 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped src="./_Categorie.scss">
-.categorieCard {
-  width: 300px;
-  height: 300px;
-  background-color: red;
-}
-</style>
+<style lang="scss" scoped src="./_Categorie.scss"></style>

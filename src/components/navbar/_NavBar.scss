@@ -1,12 +1,15 @@
 .navbar {
   width: 100%;
-  background-image: linear-gradient(to top left, #1a502c, #063816, #0000);
+  background-color: #7d9f6e;
+  height: 20%;
 
   &__list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 100%;
+    align-content: center;
+    align-items: center;
+    width: 80%;
     font-family: "Montserrat", sans-serif;
     color: cornsilk;
     list-style: none;
@@ -14,8 +17,8 @@
     &__item {
       font-family: "Montserrat", sans-serif;
       color: cornsilk;
-      margin: 0 10px;
       transition: font-weight 0.3s;
+      margin-right: 1.5%;
 
       &:hover {
         font-weight: bold;

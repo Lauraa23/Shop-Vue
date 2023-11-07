@@ -1,6 +1,6 @@
 const categories = [
   {
-    image: "imageTest",
+    image: "../../assets/maceta.webp",
     name: "nameTest",
   },
   {

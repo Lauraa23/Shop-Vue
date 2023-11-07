@@ -1,6 +1,25 @@
 <template>
-  <div class="home">
-    <h2 class="home__text">Welcome!</h2>
+  <div class="banners">
+    <div class="banners__left">
+      <img class="banners__left__item" src="../../assets/suculentas.jpg" />
+      <h1 class="banners__left__text">Welcome!</h1>
+    </div>
+    <div class="banners__right">
+      <div class="banners__right__top">
+        <img
+          class="banners__right__top__item"
+          src="../../assets/interior.jpg"
+        />
+        <p class="banners__right__top__text">Test</p>
+      </div>
+      <div class="banners__right__bottom">
+        <img
+          class="banners__right__bottom__item"
+          src="../../assets/flowers.jpg"
+        />
+        <p class="banners__right__bottom__text">Test</p>
+      </div>
+    </div>
   </div>
   <h1>Categories</h1>
   <div>

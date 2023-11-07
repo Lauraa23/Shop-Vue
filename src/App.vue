@@ -1,13 +1,13 @@
 <template>
-  <HeaderMain />
+  <layout />
   <router-view />
 </template>
 <script>
-import HeaderMain from "./components/header/HeaderMain.vue";
+import Layout from "./components/layout/Layout.vue";
 
 export default {
   name: "App",
-  components: { HeaderMain },
+  components: { Layout },
 };
 </script>
 <style lang="scss"></style>

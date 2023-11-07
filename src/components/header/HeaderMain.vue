@@ -13,7 +13,7 @@
         class="header__options__form"
         to="/login"
         style="text-decoration: none"
-        >Sign in /</router-link
+        >Sign in/</router-link
       >
       <router-link
         class="header__options__form"

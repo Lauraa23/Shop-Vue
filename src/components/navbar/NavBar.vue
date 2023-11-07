@@ -6,9 +6,7 @@
           >Home</router-link
         >
       </li>
-      <li class="navbar__list__item">
-        <DropDownMenu />
-      </li>
+      <li class="navbar__list__item">Shop</li>
       <li class="navbar__list__item">
         <router-link
           to="/aboutview"
@@ -34,11 +32,8 @@
   </nav>
 </template>
 <script>
-import DropDownMenu from "./DropDownMenu.vue";
-
 export default {
   name: "NavBar",
-  components: { DropDownMenu },
 };
 </script>
 
