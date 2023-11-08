@@ -3,6 +3,9 @@
   <p>If you want to know a little about our history keep reading</p>
 </template>
 <script>
-export default {};
+import InformationCards from "@/components/cards/InformationCards.vue";
+export default {
+  component: { InformationCards },
+};
 </script>
-<style lang=""></style>
+<style></style>

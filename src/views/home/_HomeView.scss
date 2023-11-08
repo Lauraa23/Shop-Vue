@@ -6,106 +6,97 @@
   align-items: center;
   &__banners {
     width: 70%;
+    height: 28vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding-top: 25px;
-
     &__left {
-      width: 70%;
+      width: 60%;
+      height: 80%;
+      background-size: cover;
+      border-radius: 10px;
       position: relative;
-      text-align: center;
-      padding: 1%;
-      &__item {
+      &__image {
+        background-image: url("../../assets/suculentas.jpg");
+        height: 100%;
         width: 100%;
-        display: block;
-        filter: blur(3px);
-        border-radius: 8px;
+        border-radius: 10px;
+        filter: blur(4.5px);
+        -webkit-filter: blur(4.5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       &__text {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(20%, -65%);
         font-family: "Anton", sans-serif;
+        color: white;
         font-weight: lighter;
-        text-shadow: 8px 3px 3px gray;
-        font-size: 1.8rem;
-        word-spacing: 8px;
-        letter-spacing: 3px;
-        color: $white;
-      }
-      &__button {
+        font-size: 2vw;
         position: absolute;
         top: 50%;
-        right: 50%;
-        transform: translate(-80%, 500%);
-        color: $white;
-        border: none;
-        border-radius: 43px;
-        background-color: #67927a;
-        background: var(--branding-success, #67927a);
-        cursor: pointer;
-        font-family: "Poppins", sans-serif;
-        &:hover {
-          color: rgba(255, 255, 255, 1) !important;
-          box-shadow: 0 4px 16px #565447;
-          transition: all 0.2s ease;
-        }
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-shadow: 7px 4px 5px #b1afaf;
+        letter-spacing: 2.2px;
       }
     }
-
     &__right {
-      width: 32%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      width: 30%;
+      height: 80%;
 
-      &__top,
+      &__top {
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        position: relative;
+        &__text {
+          font-family: "Anton", sans-serif;
+          color: white;
+          font-weight: lighter;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          text-align: center;
+        }
+        &__image {
+          background-image: url("../../assets/maceta2.jpg");
+          height: 100%;
+          width: 100%;
+          border-radius: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
       &__bottom {
         width: 100%;
-        height: 100%;
+        height: 50%;
+        border-radius: 10px;
         position: relative;
-        text-align: center;
-        padding: 1%;
-
-        &__item {
-          width: 80%;
-          display: block;
-          border-radius: 8px;
-        }
-
         &__text {
+          font-family: "Anton", sans-serif;
+          color: white;
+          font-weight: lighter;
           position: absolute;
           top: 8px;
           left: 16px;
-          color: inherit;
-          font-size: 1.5rem;
-          font-family: "Anton", sans-serif;
-          font-weight: lighter;
-          text-shadow: 3px 3px 3px gray;
-          color: azure;
-          letter-spacing: 2px;
+          z-index: 1;
+          text-align: center;
         }
-        &__button {
-          position: absolute;
-          bottom: 30px;
-          left: 16px;
-          color: $white;
-          border: none;
-          border-radius: 43px;
-          background-color: #67927a;
-          background: var(--branding-success, #67927a);
-          cursor: pointer;
-          font-family: "Poppins", sans-serif;
-          &:hover {
-            color: rgba(255, 255, 255, 1) !important;
-            box-shadow: 0 4px 16px #6c6666;
-            transition: all 0.2s ease;
-          }
+        &__image {
+          background-image: url("../../assets/plantbackground.jpg");
+          height: 100%;
+          width: 100%;
+          border-radius: 10px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
     }
