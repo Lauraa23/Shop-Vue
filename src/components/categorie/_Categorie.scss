@@ -1,0 +1,23 @@
+.categorieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 10vw;
+  border: 1px solid var(--gray-scale-gray-100, #e6e6e6);
+  margin: 0.5%;
+  transition: all 0.3s;
+
+  &__img {
+    width: 100%;
+    height: 60%;
+  }
+  &__name {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+  }
+}

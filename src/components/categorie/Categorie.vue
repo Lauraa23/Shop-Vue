@@ -1,7 +1,7 @@
 <template>
   <div class="categorieCard">
-    <img class="categorieCard__img" />
-    <h5 class="categorieCard__name">{{ data.name }}</h5>
+    <img src="../../assets/pimiento.jpg" class="categorieCard__img" />
+    <p class="categorieCard__name">{{ data.name }}</p>
   </div>
 </template>
 <script>

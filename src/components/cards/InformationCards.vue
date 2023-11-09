@@ -1,23 +1,25 @@
 <template>
-  <div class="cardsContainer">
-    <div class="cardsContainer__card">
-      <div class="cardsContainer__card__image">
-        <img src="../../assets/maceta.webp" />
-      </div>
-      <div class="cardsContainer__card__buttons">
-        <button>Añadir al carrito</button>
+  <div class="card">
+    <div class="card__photo">
+      <img
+        class="card__photo__image"
+        src="https://s-media-cache-ak0.pinimg.com/236x/3b/36/ca/3b36ca3afe0fa0fd4984b9eee2e154bb.jpg"
+      />
+    </div>
+    <div class="card__description">
+      <h1 class="card__description__name">Popular House Plant</h1>
+      <h2 class="card__description__price">18€</h2>
+      <p class="card__description__text">
+        Spathiphyllum floor plant arranged in a bamboo planter with a blue & red
+        ribbom and butterfly pick.
+      </p>
+      <button class="card__description__button">Add to Cart</button>
+      <button class="card__description__button">
         <font-awesome-icon
           class="header__main__views__icons"
           icon="fa-solid fa-heart"
         ></font-awesome-icon>
-      </div>
-      <div class="cardsContainer__card__text">
-        <h2>Product Name</h2>
-      </div>
-      <div class="cardsContainer__card__stats">
-        <div class="cardsContainer__card__stats__price">9,99€</div>
-        <div class="cardsContainer__card__stats__value">8/10</div>
-      </div>
+      </button>
     </div>
   </div>
 </template>

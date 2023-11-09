@@ -19,7 +19,7 @@
       </div>
     </div>
     <h1>Categories</h1>
-    <div>
+    <div class="categories">
       <Categorie
         :data="categorie"
         v-for="categorie in categories"
@@ -27,7 +27,7 @@
       />
     </div>
     <h1>Products</h1>
-    <div>
+    <div class="popularProducts">
       <PopularProducts
         :data="product"
         v-for="product in products"
@@ -35,17 +35,15 @@
       />
     </div>
   </div>
-  <InformationCards />
 </template>
 <script>
 import Categories from "../../mocks/Categories.js";
 import Categorie from "../../components/categorie/Categorie.vue";
 import PopularProducts from "../../components/products/PopularProducts.vue";
 import Products from "../../mocks/Products.js";
-import InformationCards from "@/components/cards/InformationCards.vue";
 
 export default {
-  components: { Categorie, PopularProducts, InformationCards },
+  components: { Categorie, PopularProducts },
   data() {
     return {
       categories: Categories,

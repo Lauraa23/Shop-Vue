@@ -1,19 +1,19 @@
 const categories = [
   {
     image: "../../assets/maceta.webp",
-    name: "nameTest",
+    name: "Plants",
   },
   {
     image: "imageTest",
-    name: "nameTest",
+    name: "Plots",
   },
   {
     image: "imageTest",
-    name: "nameTest",
+    name: "Sets",
   },
   {
     image: "imageTest",
-    name: "nameTest",
+    name: "Gifts",
   },
 ];
 export default categories;

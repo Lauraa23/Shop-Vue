@@ -2,25 +2,25 @@ const products = [
   {
     image: "imageTest",
     name: "nameTest",
-    price: "priceTest",
+    price: "17,99€",
     valoration: "valorTest",
   },
   {
     image: "imageTest",
     name: "nameTest",
-    price: "priceTest",
+    price: "12,50€",
     valoration: "valorTest",
   },
   {
     image: "imageTest",
     name: "nameTest",
-    price: "priceTest",
+    price: "9,99€",
     valoration: "valorTest",
   },
   {
     image: "imageTest",
     name: "nameTest",
-    price: "priceTest",
+    price: "valorTest1",
     valoration: "valorTest",
   },
 ];
