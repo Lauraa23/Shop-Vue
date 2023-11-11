@@ -13,7 +13,7 @@ const categories = [
   },
   {
     image: "imageTest",
-    name: "Gifts",
+    name: "Accesories",
   },
 ];
 export default categories;

@@ -18,7 +18,10 @@
         </div>
       </div>
     </div>
-    <h1>Categories</h1>
+    <div class="head">
+      <h1 class="head__name">Popular Categories</h1>
+      <a class="head__anchor">View All →</a>
+    </div>
     <div class="categories">
       <Categorie
         :data="categorie"
@@ -26,7 +29,10 @@
         :key="categorie.name"
       />
     </div>
-    <h1>Products</h1>
+    <div class="head">
+      <h1 class="head__name">Popular Products</h1>
+      <a class="head__anchor">View All →</a>
+    </div>
     <div class="popularProducts">
       <PopularProducts
         :data="product"
