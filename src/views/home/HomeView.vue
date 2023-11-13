@@ -41,19 +41,26 @@
       />
     </div>
   </div>
+  <div class="hotDeals">
+    <h2 class="hotDeals__title"></h2>
+    <HotDeals :data="deal" v-for="deal in deals" :key="deal.name" />
+  </div>
 </template>
 <script>
 import Categories from "../../mocks/Categories.js";
 import Categorie from "../../components/categorie/Categorie.vue";
 import PopularProducts from "../../components/products/PopularProducts.vue";
 import Products from "../../mocks/Products.js";
+import HotDeals from "../../components/deals/HotDeals.vue";
+import Deals from "../../mocks/Deals.js";
 
 export default {
-  components: { Categorie, PopularProducts },
+  components: { Categorie, PopularProducts, HotDeals },
   data() {
     return {
       categories: Categories,
       products: Products,
+      deals: Deals,
     };
   },
 };

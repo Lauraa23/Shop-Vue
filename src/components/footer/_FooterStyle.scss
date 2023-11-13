@@ -1,0 +1,111 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--gray-scale-gray-900, #1a1a1a);
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+
+    &__icon {
+      color: #4fae5a;
+      font-size: 1.5vw;
+    }
+    &__name {
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      font-size: 2vw;
+    }
+  }
+  &__link-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      &__link-name {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 1vw;
+      }
+      &__anchor {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8vw;
+        font-weight: lighter;
+        text-decoration: none;
+        opacity: 0.8;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__input {
+      list-style: none;
+      &__link-name {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+      }
+      &__mail {
+        border: none;
+        border-radius: 46px;
+        padding: 5px;
+        font-family: "Poppins";
+        font-size: 0.8vw;
+      }
+      &__button {
+        border: none;
+        border-radius: 43px;
+        background-color: #2eb67d;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        margin-top: 1.8%;
+        padding: 4.5px 10px;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        &:hover {
+          outline: max(0.125rem, 0.15em) solid #4fae5a;
+          background-color: #cff5e7;
+          color: #2eb67d;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__left {
+      color: #fff;
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.8vw;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: row;
+
+      &__link {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8vw;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

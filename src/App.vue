@@ -1,6 +1,5 @@
 <template>
   <layout />
-  <router-view />
 </template>
 <script>
 import Layout from "./components/layout/Layout.vue";
