@@ -1,0 +1,38 @@
+.dealsCard {
+  background-image: url("../../assets/green.jpg");
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20vw;
+  height: 25vw;
+  border-radius: 8px;
+  margin: 1%;
+
+  &__tag {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.65vw;
+    font-style: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__title {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.45vw;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+  &__content {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 0.85vw;
+    font-style: normal;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+}

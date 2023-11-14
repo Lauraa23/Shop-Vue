@@ -1,11 +1,8 @@
 <template>
   <div class="dealsCard">
-    <img class="dealsCard__img" src="../../assets/plantbackground.jpg" />
-    <div class="dealsCard__description">
-      <p class="dealsCard__description__tag">{{ data.tag }}</p>
-      <h3 class="dealsCard__description__title">{{ data.title }}</h3>
-      <p class="dealsCard__description__content">{{ data.name }}</p>
-    </div>
+    <p class="dealsCard__tag">{{ data.tag }}</p>
+    <h3 class="dealsCard__title">{{ data.title }}</h3>
+    <p class="dealsCard__content">{{ data.content }}</p>
   </div>
 </template>
 <script>

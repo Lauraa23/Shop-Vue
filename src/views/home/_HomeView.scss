@@ -137,7 +137,17 @@
     width: 100%;
     justify-content: center;
   }
-  .hotDeals{
-    
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+  .hotDeals {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+  }
+  .discountBanner {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
   }
 }

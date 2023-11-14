@@ -5,7 +5,7 @@ const categories = [
   },
   {
     image: "imageTest",
-    name: "Plots",
+    name: "Pots",
   },
   {
     image: "imageTest",

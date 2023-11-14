@@ -1,0 +1,15 @@
+<template>
+  <div class="discountCard">
+    <div class="discountCard__info">
+      <p class="discountCard__info__tag">Summer Sale</p>
+      <h3 class="discountCard__info__title">37% off</h3>
+      <p class="discountCard__info__resume">
+        Free on all your order. Free Shipping and 30 days money-back guarantee
+      </p>
+    </div>
+  </div>
+</template>
+<script>
+export default {};
+</script>
+<style lang="scss" scoped src="./_DiscountBanner.scss"></style>

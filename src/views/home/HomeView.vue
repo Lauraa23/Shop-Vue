@@ -10,11 +10,11 @@
       <div class="homeMain__banners__right">
         <div class="homeMain__banners__right__top">
           <div class="homeMain__banners__right__top__image"></div>
-          <p class="homeMain__banners__right__top__text">Sets & Plots</p>
+          <p class="homeMain__banners__right__top__text">Sets & Pots</p>
         </div>
         <div class="homeMain__banners__right__bottom">
           <div class="homeMain__banners__right__bottom__image"></div>
-          <p class="homeMain__banners__right__bottom__text">Special Deals</p>
+          <p class="homeMain__banners__right__bottom__text">Accessories</p>
         </div>
       </div>
     </div>
@@ -40,10 +40,13 @@
         :key="product.name"
       />
     </div>
-  </div>
-  <div class="hotDeals">
-    <h2 class="hotDeals__title"></h2>
-    <HotDeals :data="deal" v-for="deal in deals" :key="deal.name" />
+    <h2 class="hotDeals__title">Hot Deals</h2>
+    <div class="hotDeals">
+      <HotDeals :data="deal" v-for="deal in deals" :key="deal.name" />
+    </div>
+    <div class="discountBanner">
+      <DiscountBanner />
+    </div>
   </div>
 </template>
 <script>
@@ -53,9 +56,10 @@ import PopularProducts from "../../components/products/PopularProducts.vue";
 import Products from "../../mocks/Products.js";
 import HotDeals from "../../components/deals/HotDeals.vue";
 import Deals from "../../mocks/Deals.js";
+import DiscountBanner from "@/components/deals/DiscountBanner.vue";
 
 export default {
-  components: { Categorie, PopularProducts, HotDeals },
+  components: { Categorie, PopularProducts, HotDeals, DiscountBanner },
   data() {
     return {
       categories: Categories,
