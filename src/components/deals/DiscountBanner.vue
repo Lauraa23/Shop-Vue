@@ -7,9 +7,12 @@
         Free on all your order. Free Shipping and 30 days money-back guarantee
       </p>
     </div>
+    <ShopNow buttonShop="Shop Now →" type="submit" />
   </div>
 </template>
 <script>
-export default {};
+import ShopNow from "../buttons/shop-now/ShopNow.vue";
+
+export default { components: { ShopNow } };
 </script>
 <style lang="scss" scoped src="./_DiscountBanner.scss"></style>

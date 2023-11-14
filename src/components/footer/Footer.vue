@@ -60,10 +60,10 @@
       <ul class="content__link-boxes__box">
         <li class="content__link-boxes__box__link-name">Categories</li>
         <li><a class="content__link-boxes__box__anchor" href="#">Plants</a></li>
-        <li><a class="content__link-boxes__box__anchor" href="#">Plots</a></li>
+        <li><a class="content__link-boxes__box__anchor" href="#">Pots</a></li>
         <li><a class="content__link-boxes__box__anchor" href="#">Sets</a></li>
         <li>
-          <a class="content__link-boxes__box__anchor" href="#">Accesories</a>
+          <a class="content__link-boxes__box__anchor" href="#">Accessories</a>
         </li>
       </ul>
       <ul class="content__link-boxes__input">
