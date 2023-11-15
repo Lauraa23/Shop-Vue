@@ -7,11 +7,19 @@ import {
   faHeart,
   faBagShopping,
   faUser,
+  faSliders,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faPagelines } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faMagnifyingGlass, faHeart, faBagShopping, faPagelines, faUser);
+library.add(
+  faMagnifyingGlass,
+  faHeart,
+  faBagShopping,
+  faPagelines,
+  faUser,
+  faSliders
+);
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)

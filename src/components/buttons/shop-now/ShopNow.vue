@@ -1,7 +1,5 @@
 <template>
-  <button type="submit" class="shopNow" @click="onClick">
-    {{ buttonShop }}
-  </button>
+  <button type="submit" class="shopNow" @click="onClick">Shop Now →</button>
 </template>
 <script>
 export default {

@@ -23,6 +23,7 @@
       letter-spacing: 0.42px;
       text-transform: uppercase;
       color: #fff;
+      margin: 0;
     }
     &__title {
       text-align: center;
@@ -39,6 +40,15 @@
       font-size: 0.65vw;
       font-style: normal;
       color: #fff;
+      margin: 0;
+    }
+    &__button {
+      display: flex;
+      padding: 6px 4px;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 50%;
     }
   }
 }

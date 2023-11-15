@@ -6,8 +6,10 @@
       <p class="discountCard__info__resume">
         Free on all your order. Free Shipping and 30 days money-back guarantee
       </p>
+      <div class="discountCard__info__button">
+        <ShopNow type="submit" style="width: 8.5vw" />
+      </div>
     </div>
-    <ShopNow buttonShop="Shop Now →" type="submit" />
   </div>
 </template>
 <script>
