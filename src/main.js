@@ -8,6 +8,7 @@ import {
   faBagShopping,
   faUser,
   faSliders,
+  faTag,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faPagelines } from "@fortawesome/free-brands-svg-icons";
@@ -18,7 +19,8 @@ library.add(
   faBagShopping,
   faPagelines,
   faUser,
-  faSliders
+  faSliders,
+  faTag
 );
 
 createApp(App)

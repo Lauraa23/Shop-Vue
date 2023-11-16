@@ -4,7 +4,6 @@
 <script>
 export default {
   props: {
-    buttonShop: String,
     submit: String,
     shopNow: String,
   },

@@ -47,6 +47,13 @@
     <div class="discountBanner">
       <DiscountBanner />
     </div>
+    <div class="blogCards">
+      <BlogCards
+        :data="blog"
+        v-for="(blog, index) in blogs.slice(0, 3)"
+        :key="index"
+      />
+    </div>
   </div>
 </template>
 <script>
@@ -57,14 +64,23 @@ import Products from "../../mocks/Products.js";
 import HotDeals from "../../components/deals/HotDeals.vue";
 import Deals from "../../mocks/Deals.js";
 import DiscountBanner from "@/components/deals/DiscountBanner.vue";
+import BlogCards from "@/components/cards/BlogCards.vue";
+import Blogs from "../../mocks/Blogs.js";
 
 export default {
-  components: { Categorie, PopularProducts, HotDeals, DiscountBanner },
+  components: {
+    Categorie,
+    PopularProducts,
+    HotDeals,
+    DiscountBanner,
+    BlogCards,
+  },
   data() {
     return {
       categories: Categories,
       products: Products,
       deals: Deals,
+      blogs: Blogs,
     };
   },
 };
