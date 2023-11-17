@@ -18,16 +18,18 @@
         </div>
       </div>
     </div>
-    <div class="head">
-      <h1 class="head__name">Popular Categories</h1>
-      <a class="head__anchor">View All →</a>
-    </div>
     <div class="categories">
-      <Categorie
-        :data="categorie"
-        v-for="categorie in categories"
-        :key="categorie.name"
-      />
+      <div class="categories__head">
+        <h1 class="categories__head__name">Popular Categories</h1>
+        <a class="categories__head__anchor">View All →</a>
+      </div>
+      <div class="categories__cards">
+        <Categorie
+          :data="categorie"
+          v-for="categorie in categories"
+          :key="categorie.name"
+        />
+      </div>
     </div>
     <div class="head">
       <h1 class="head__name">Popular Products</h1>
