@@ -1,7 +1,39 @@
 <template>
-  <button></button>
+  <button v-for="tag in uniqueTags" :key="tag">{{ tag }}</button>
 </template>
 <script>
-export default {};
+import blogs from "@/mocks/Blogs";
+export default {
+  data() {
+    return {
+      blogs: blogs,
+    };
+  },
+  computed: {
+    uniqueTags() {
+      const allTags = this.blogs.reduce(
+        (tags, blog) => [...tags, ...blog.tags],
+        []
+      );
+      const uniqueTags = [...new Set(allTags)];
+      return uniqueTags;
+    },
+  },
+};
 </script>
-<style lang=""></style>
+<style lang="css">
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 6px 16px;
+  background: var(--gray-scale-gray-50, #f2f2f2);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--branding-success, #00b207);
+  color: #f2f2f2;
+}
+</style>

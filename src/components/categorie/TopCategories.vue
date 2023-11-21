@@ -21,4 +21,11 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="css">
+li {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8vw;
+  font-style: normal;
+}
+</style>
