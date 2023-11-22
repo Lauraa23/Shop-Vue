@@ -18,7 +18,12 @@
         </p>
       </div>
       <p class="blogCard__description__resume">{{ data.resume }}</p>
-      <ReadMore type="submit" />
+      <router-link
+        :to="{ name: 'single-blog', params: { id: data.id } }"
+        @click="handleReadMoreClick"
+      >
+        <ReadMore type="submit" />
+      </router-link>
     </div>
   </div>
 </template>
@@ -31,6 +36,11 @@ export default {
     },
   },
   components: { ReadMore },
+  methods: {
+    handleReadMoreClick() {
+      console.log("Clicked Read More. ID:", this.data.id);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped src="./_BlogCards.scss"></style>

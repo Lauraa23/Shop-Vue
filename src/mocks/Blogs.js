@@ -8,6 +8,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Plants",
+    id: "1",
   },
   {
     image: "",
@@ -18,6 +19,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Pots",
+    id: "2",
   },
   {
     image: "",
@@ -28,6 +30,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Accessories",
+    id: "3",
   },
   {
     image: "",
@@ -38,6 +41,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Indoor Plants",
+    id: "4",
   },
   {
     image: "",
@@ -48,6 +52,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Outdoor Plants",
+    id: "5",
   },
   {
     image: "",
@@ -58,6 +63,7 @@ const blogs = [
     resume:
       "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
     categories: "Sheeds",
+    id: "6",
   },
 ];
 export default blogs;

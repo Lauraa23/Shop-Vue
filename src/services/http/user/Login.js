@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const url = "http://localhost:8080/register";
+const url = "http://localhost:8080/login";
 
-export const registerUser = async (email, password) => {
+export const loginUser = async (email, password) => {
   console.log(url, email, password);
   const response = await axios.post(url, {
     email: email,

@@ -8,6 +8,7 @@ import BlogViewVue from "@/views/blog/BlogView.vue";
 import AboutViewVue from "@/views/about/AboutView.vue";
 import LoginFormVue from "@/views/authentication/LoginForm.vue";
 import RegisterFormVue from "@/views/authentication/RegisterForm.vue";
+import SingleBlog from "../views/blog/SingleBlog.vue";
 
 const routes = [
   {
@@ -57,6 +58,15 @@ const routes = [
     path: "/register",
     component: RegisterFormVue,
     name: "register",
+  },
+  {
+    path: "/blog/:id",
+    component: SingleBlog,
+    name: "single-blog",
+    props: (route) => ({
+      id: route.params.id,
+      blog: route.params.blog,
+    }),
   },
 ];
 

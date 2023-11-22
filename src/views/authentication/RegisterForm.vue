@@ -35,7 +35,7 @@
       <div class="authMain__form__buttons">
         <button
           class="authMain__form__buttons__button"
-          v-on:click.prevent="signup"
+          v-on:click.prevent="handleClick"
           type="submit"
         >
           Sign Up
@@ -52,6 +52,7 @@
   </div>
 </template>
 <script>
+import { registerUser } from "@/services/http/user/Register";
 export default {
   name: "RegisterForm",
   data() {
@@ -85,6 +86,21 @@ export default {
       this.input.email = "";
       this.input.password = "";
       this.input.passwordConfirmation = "";
+    },
+    async registerUp() {
+      try {
+        const response = await registerUser(
+          this.input.email,
+          this.input.password
+        );
+        console.log(response);
+      } catch (error) {
+        console.error("Error registering user:", error);
+      }
+    },
+    handleClick() {
+      this.registerUp();
+      this.signup();
     },
   },
 };
