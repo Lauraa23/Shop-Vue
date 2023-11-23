@@ -26,9 +26,8 @@ const blogs = [
     date: "16 Nov",
     tags: ["test1", "test2"],
     by: "By Admin",
-    type: "Pots",
-    resume:
-      "Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.",
+    type: "Test",
+    resume: "Hola",
     categories: "Accessories",
     id: "3",
   },

@@ -31,16 +31,18 @@
         />
       </div>
     </div>
-    <div class="head">
-      <h1 class="head__name">Popular Products</h1>
-      <a class="head__anchor">View All →</a>
-    </div>
     <div class="popularProducts">
-      <PopularProducts
-        :data="product"
-        v-for="product in products"
-        :key="product.name"
-      />
+      <div class="popularProducts__head">
+        <h1 class="popularProducts__head__name">Popular Products</h1>
+        <a class="popularProducts__head__anchor">View All →</a>
+      </div>
+      <div class="popularProducts__cards">
+        <PopularProducts
+          :data="product"
+          v-for="product in products"
+          :key="product.name"
+        />
+      </div>
     </div>
     <h2 class="hotDeals__title">Hot Deals</h2>
     <div class="hotDeals">

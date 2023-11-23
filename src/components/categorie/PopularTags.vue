@@ -1,5 +1,5 @@
 <template>
-  <button v-for="tag in uniqueTags" :key="tag">{{ tag }}</button>
+  <button class="tags" v-for="tag in uniqueTags" :key="tag">{{ tag }}</button>
 </template>
 <script>
 import blogs from "@/mocks/Blogs";
@@ -22,7 +22,7 @@ export default {
 };
 </script>
 <style lang="css">
-button {
+.tags {
   border: none;
   border-radius: 30px;
   padding: 6px 16px;
@@ -32,7 +32,7 @@ button {
   color: #1a1a1a;
   cursor: pointer;
 }
-button:hover {
+.tags:hover {
   background: var(--branding-success, #00b207);
   color: #f2f2f2;
 }
